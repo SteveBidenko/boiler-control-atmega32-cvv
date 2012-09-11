@@ -1,5 +1,6 @@
 #ifndef __SIGNALS__
 #define __SIGNALS__
+
 //  онстанты длительностей и периодов
 #define SHORT_MAX 1
 #define LONG_MAX 5
@@ -34,4 +35,5 @@ extern void signal_green(unsigned char);
 extern void signal_red(unsigned char);
 extern void signal_white(unsigned char);
 extern void signal_printallbytes (void);
+
 #endif

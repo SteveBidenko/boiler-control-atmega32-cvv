@@ -7,9 +7,9 @@
     #endasm
     #include <ds1820.h>
 */
-
 #ifndef _SPD1820_INCLUDED_
 #define _SPD1820_INCLUDED_
+
 #include <1wire.h>
 #define DS1820_FAMILY_CODE 0x10
 #define DS1820_SEARCH_ROM_CMD 0xf0
@@ -45,7 +45,7 @@ unsigned char ds1820_read_spd(unsigned char *addr);
 unsigned char ds1820_write_spd(unsigned char *addr);
 unsigned char ds1820_run_measure(unsigned char *addr);
 int ds1820_temperature(unsigned char *addr);            // без запуска на измерения
-int ds1820_temperature_10(unsigned char *addr);         // вычитываем температуру и запускаем на измерения 
+int ds1820_temperature_10(unsigned char *addr);         // вычитываем температуру и запускаем на измерения
 int ds1820_temperature_10lh(unsigned char *addr, signed char *temp_low, signed char *temp_high);
 unsigned char ds1820_set_alarm(unsigned char *addr, signed char temp_low, signed char temp_high);
 signed char ds1820_get_alarm(unsigned char *addr, signed char *temp_low, signed char *temp_high);
