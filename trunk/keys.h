@@ -1,6 +1,5 @@
 #ifndef _KEYS_
 #define _KEYS_
-
 // для совместимости
 #define KEY_STOP  key(0)    // [0] KEY_STOP   PINC.3
 //#define KEY_STOP_RANGE  range(0)   // [0] KEY_STOP   выборы
@@ -26,6 +25,5 @@ void init_keys(void);       // Инициализация всех кнопок
 void poll_keys(void);       // Опрос всех кнопок
 void poll_key(unsigned char); // Опрос конкретной кнопки
 unsigned char key(unsigned char);
-extern unsigned char key_treated[7] ;
-
+extern unsigned char key_treated[7] ; 
 #endif

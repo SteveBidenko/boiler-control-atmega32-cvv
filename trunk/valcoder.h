@@ -1,6 +1,5 @@
 #ifndef _VALCODER_
 #define _VALCODER_
-
 // Определение подстановок
 #define VALCODER_PIN0 (PIND.2)
 #define VALCODER_PIN1 (PIND.3)
@@ -17,5 +16,4 @@
 // extern word counter0, counter1;
 // extern int valcoder;
 extern signed char valcoder;
-
 #endif
